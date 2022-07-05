@@ -1,7 +1,7 @@
 {
-    "name": "eslint-config-superology-vue",
+    "name": "eslint-config-superology-vue-typescript",
     "version": "0.3.5",
-    "description": "Shared ESLint & Prettier config for Vue based projects at Superology",
+    "description": "Shared ESLint & Prettier config for Vue based projects at Superology using TypeScript",
     "main": "index.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
@@ -9,7 +9,7 @@
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/momo-gg/eslint-config-superology-vue"
+        "url": "https://github.com/momo-gg/eslint-config-superology-vue-typescript"
     },
     "maintainers": [
         "Momir Zmijanac <momir.zmijanac@superology.com>"
@@ -48,7 +48,8 @@
         "eslint": ">= 8.8.0",
         "eslint-plugin-import": ">= 2.25.4",
         "prettier": ">= 2.5.1",
-        "eslint-config-airbnb-base": ">=15.0.0"
+        "eslint-config-airbnb-base": ">=15.0.0",
+        "eslint-config-superology-vue": ">=0.3.5"
     },
     "keywords": [],
     "author": "",
