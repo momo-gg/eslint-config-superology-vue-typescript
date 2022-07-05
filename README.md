@@ -57,7 +57,6 @@ This plugin really requires `eslint-config-superology-vue` to work correctly and
                 ]
             },
             "extends": [
-                "eslint-config-superology-vue",
                 "eslint-config-superology-vue-typescript"
             ],
             "settings": {
