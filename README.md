@@ -22,7 +22,7 @@ npm install eslint-config-superology-vue-typescript --save-dev
 Also make sure you have peer dependencies installed:
 
 ```bash
-npm install eslint prettier jest eslint-plugin-import eslint-config-superology-vue @rushstack/eslint-patch --save-dev
+npm install eslint-config-superology-vue @rushstack/eslint-patch --save-dev
 ```
 
 #### IMPORTANT
@@ -33,21 +33,44 @@ This plugin really requires `eslint-config-superology-vue` to work correctly and
 
 ```json
 {
-  "extends": "eslint-config-superology-vue-typescript"
+    "ignorePatterns": [
+        "**/node_modules",
+        "!**/*"
+    ],
+    "overrides": [
+        {
+            "files": [
+                "*.js"
+            ],
+            "extends": [
+                "eslint-config-superology-vue"
+            ]
+        },
+        {
+            "files": [
+                "*.vue",
+                "*.ts"
+            ],
+            "parserOptions": {
+                "project": [
+                    "./tsconfig.json"
+                ]
+            },
+            "extends": [
+                "eslint-config-superology-vue",
+                "eslint-config-superology-vue-typescript"
+            ],
+            "settings": {
+                "import/resolver": {
+                    "typescript": {}
+                }
+            }
+        }
+    ]
 }
 ```
 
 _Using `.eslintrc` file_
-
-or
-
-```js
-module.exports = {
-  extends: "eslint-config-superology-vue-typescript",
-};
-```
-
-_if using `.eslintrc.js` file_
 
 ## Suggestions?
 
