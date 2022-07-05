@@ -1,3 +1,6 @@
+/* eslint-env node */
+require('@rushstack/eslint-patch/modern-module-resolution')
+
 module.exports = {
     env: {
         es6: true,
@@ -7,9 +10,14 @@ module.exports = {
         'airbnb-base',
         'airbnb-typescript/base',
         'plugin:@typescript-eslint/recommended',
-        'plugin:security-node/recommended',
+        '@vue/eslint-config-typescript/recommended',
+        'eslint-config-superology-vue',
     ],
-    plugins: ['security-node', 'simple-import-sort', '@typescript-eslint/eslint-plugin'],
+    parserOptions: {
+        ecmaVersion: 2020,
+        sourceType: 'module',
+    },
+    plugins: ['simple-import-sort', '@typescript-eslint/eslint-plugin'],
     rules: {
         '@typescript-eslint/explicit-module-boundary-types': 'off',
         '@typescript-eslint/explicit-function-return-type': 'off',
@@ -84,7 +92,6 @@ module.exports = {
         'object-shorthand': 'error',
         'one-var': ['error', 'never'],
         'jest/unbound-method': 'off',
-        radix: 'error',
         'use-isnan': 'error',
         'valid-typeof': 'off',
         '@typescript-eslint/await-thenable': ['error'],

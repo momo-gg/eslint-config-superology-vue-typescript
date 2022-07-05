@@ -1,8 +1,8 @@
-# eslint-config-superology-vue
+# eslint-config-superology-vue-typescript
 
-Shared ESLint config for Vue based projects at Superology.
+Shared ESLint config for Vue based projects at Superology using TypeScript.
 
-![@superology/eslint-config-vue](https://svgshare.com/i/dvq.svg "ESLint Vue config by Superology")
+![@superology/eslint-config-vue](https://svgshare.com/i/dvq.svg "ESLint Vue config by Superology (TypeScript)")
 
 ESLint statically analyzes your code to quickly find problems. ESLint is built into most text editors and you can run ESLint as part of your continuous integration pipeline.
 
@@ -16,20 +16,20 @@ ESLint statically analyzes your code to quickly find problems. ESLint is built i
 ### Install the configuration
 
 ```bash
-npm install eslint-config-superology-vue --save-dev
+npm install eslint-config-superology-vue-typescript --save-dev
 ```
 
 Also make sure you have peer dependencies installed:
 
 ```bash
-npm install eslint prettier jest eslint-plugin-import --save-dev
+npm install eslint prettier jest eslint-plugin-import eslint-config-superology-vue @rushstack/eslint-patch --save-dev
 ```
 
 ### Add to ESLint configuration
 
 ```json
 {
-  "extends": "eslint-config-superology-vue"
+  "extends": "eslint-config-superology-vue-typescript"
 }
 ```
 
@@ -39,7 +39,7 @@ or
 
 ```js
 module.exports = {
-  extends: "eslint-config-superology-vue",
+  extends: "eslint-config-superology-vue-typescript",
 };
 ```
 
