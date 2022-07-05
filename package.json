@@ -1,6 +1,6 @@
 {
     "name": "eslint-config-superology-vue-typescript",
-    "version": "0.3.6",
+    "version": "0.3.7",
     "description": "Shared ESLint & Prettier config for Vue based projects at Superology using TypeScript",
     "main": "index.js",
     "scripts": {
@@ -20,38 +20,28 @@
         "access": "public"
     },
     "dependencies": {
+        "@rushstack/eslint-patch": "^1.1.4",
         "@typescript-eslint/eslint-plugin": "5.10.0",
         "@typescript-eslint/parser": "5.10.0",
-        "eslint-config-airbnb-base": "^15.0.0",
+        "@vue/eslint-config-typescript": "^11.0.0",
         "eslint-config-airbnb-typescript": "16.1.0",
-        "eslint-config-prettier": "^8.3.0",
-        "eslint-import-resolver-alias": "^1.1.2",
-        "eslint-plugin-compat": "^4.0.2",
-        "eslint-plugin-file-progress": "^1.2.0",
-        "eslint-plugin-jest": "^26.1.1",
-        "eslint-plugin-jest-formatting": "^3.1.0",
-        "eslint-plugin-prettier": "^4.0.0",
-        "eslint-plugin-prettier-vue": "^3.1.0",
-        "eslint-plugin-promise": "^6.0.0",
-        "eslint-plugin-simple-import-sort": "^7.0.0",
-        "eslint-plugin-sonarjs": "^0.12.0",
-        "eslint-plugin-vue": "^8.4.0"
+        "eslint-config-superology-vue": "^0.3.5",
+        "jest": "^28.1.2",
+        "semver": "^7.3.7"
     },
     "devDependencies": {
         "@commitlint/cli": "^16.1.0",
         "@commitlint/config-conventional": "^16.0.0",
-        "@vue/eslint-config-typescript": "^11.0.0",
         "eslint": "^8.8.0",
         "husky": "^7.0.4",
-        "prettier": "^2.5.1"
+        "prettier": "^2.5.1",
+        "eslint-plugin-import": "^2.26.0"
     },
     "peerDependencies": {
         "eslint": ">= 8.8.0",
         "eslint-plugin-import": ">= 2.25.4",
         "prettier": ">= 2.5.1",
-        "eslint-config-airbnb-base": ">=15.0.0",
-        "eslint-config-superology-vue": ">=0.3.5",
-        "@rushstack/eslint-patch": ">=1.1.4"
+        "eslint-config-superology-vue": ">=0.3.5"
     },
     "keywords": [],
     "author": "",

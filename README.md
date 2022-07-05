@@ -25,6 +25,10 @@ Also make sure you have peer dependencies installed:
 npm install eslint prettier jest eslint-plugin-import eslint-config-superology-vue @rushstack/eslint-patch --save-dev
 ```
 
+#### IMPORTANT
+
+This plugin really requires `eslint-config-superology-vue` to work correctly and to apply full Superology linting rules.
+
 ### Add to ESLint configuration
 
 ```json
