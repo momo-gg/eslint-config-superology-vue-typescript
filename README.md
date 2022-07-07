@@ -31,14 +31,14 @@ This plugin really requires `eslint-config-superology-vue` to work correctly and
 
 ### Add to ESLint configuration
 
+_Using `.eslintrc` file_:
+
 ```json
 {
-    "ignorePatterns": [
-        "**/node_modules",
-        "!**/*"
-    ],
     "overrides": [
+        // This override is only needed if your project actually has non-TypeScript files
         {
+
             "files": [
                 "*.js"
             ],
@@ -49,27 +49,16 @@ This plugin really requires `eslint-config-superology-vue` to work correctly and
         {
             "files": [
                 "*.vue",
+                "*.tsx",
                 "*.ts"
             ],
-            "parserOptions": {
-                "project": [
-                    "./tsconfig.json"
-                ]
-            },
             "extends": [
                 "eslint-config-superology-vue-typescript"
-            ],
-            "settings": {
-                "import/resolver": {
-                    "typescript": {}
-                }
-            }
+            ]
         }
     ]
 }
 ```
-
-_Using `.eslintrc` file_
 
 ## Suggestions?
 
