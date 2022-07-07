@@ -1,6 +1,6 @@
 {
     "name": "eslint-config-superology-vue-typescript",
-    "version": "1.0.1",
+    "version": "1.1.0",
     "description": "Shared ESLint & Prettier config for Vue based projects at Superology using TypeScript",
     "main": "index.js",
     "scripts": {
@@ -21,29 +21,31 @@
     },
     "dependencies": {
         "@rushstack/eslint-patch": "^1.1.4",
-        "@typescript-eslint/eslint-plugin": "5.10.0",
-        "@typescript-eslint/parser": "5.10.0",
+        "@typescript-eslint/eslint-plugin": "5.30.5",
+        "@typescript-eslint/parser": "5.30.5",
         "@vue/eslint-config-typescript": "^11.0.0",
-        "eslint-config-airbnb-typescript": "16.1.0",
-        "eslint-config-superology-vue": "^0.3.5",
-        "eslint-import-resolver-typescript": "^3.2.1",
+        "eslint-config-airbnb-typescript": "17.0.0",
+        "eslint-config-superology-vue": "^1.1.0",
+        "eslint-import-resolver-typescript": "^3.2.4",
         "jest": "^28.1.2",
-        "semver": "^7.3.7"
+        "semver": "^7.3.7",
+        "typescript": "^4.7.4"
     },
     "devDependencies": {
-        "@commitlint/cli": "^16.1.0",
-        "@commitlint/config-conventional": "^16.0.0",
-        "eslint": "^8.8.0",
-        "husky": "^7.0.4",
-        "prettier": "^2.5.1",
-        "eslint-plugin-import": "^2.26.0"
+        "@commitlint/cli": "^17.0.3",
+        "@commitlint/config-conventional": "^17.0.3",
+        "eslint": "^8.19.0",
+        "eslint-plugin-import": "^2.26.0",
+        "husky": "^8.0.1",
+        "prettier": "^2.7.1"
     },
     "peerDependencies": {
-        "eslint": ">= 8.8.0",
-        "eslint-plugin-import": ">= 2.25.4",
+        "eslint": ">= 8.19.0",
+        "eslint-plugin-import": ">= 2.26.0",
+        "prettier": ">= 2.7.1",
         "eslint-import-resolver-typescript": ">=3.2.1",
-        "prettier": ">= 2.5.1",
-        "eslint-config-superology-vue": ">=0.3.5"
+        "eslint-config-superology-vue": ">=1.1.0",
+        "typescript": ">=4.7.4"
     },
     "keywords": [],
     "author": "",
