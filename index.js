@@ -2,6 +2,7 @@
 require('@rushstack/eslint-patch/modern-module-resolution')
 
 module.exports = {
+    root: true,
     env: {
         es6: true,
         node: true,
@@ -13,8 +14,20 @@ module.exports = {
         '@vue/eslint-config-typescript',
         'eslint-config-superology-vue',
     ],
-    parser: '@typescript-eslint/parser',
+    parser: 'vue-eslint-parser',
     parserOptions: {
+        parser: {
+            // Script parser for `<script>`
+            js: 'espree',
+
+            // Script parser for `<script lang="ts">`
+            ts: '@typescript-eslint/parser',
+
+            // Script parser for vue directives (e.g. `v-if=` or `:attribute=`)
+            // and vue interpolations (e.g. `{{variable}}`).
+            // If not specified, the parser determined by `<script lang ="...">` is used.
+            '<template>': 'espree',
+        },
         ecmaVersion: 2022,
         sourceType: 'module',
         project: ['./tsconfig.json'],
@@ -24,7 +37,8 @@ module.exports = {
             typescript: {},
         },
     },
-    plugins: ['@typescript-eslint'],
+    plugins: ['vue', '@typescript-eslint'],
+    ignorePatterns: ['**/node_modules/**', '**/dist/**', '**/public/**'],
     rules: {
         '@typescript-eslint/explicit-module-boundary-types': 'off',
         '@typescript-eslint/explicit-function-return-type': 'off',

@@ -1,6 +1,6 @@
 {
     "name": "eslint-config-superology-vue-typescript",
-    "version": "1.1.0",
+    "version": "1.1.1",
     "description": "Shared ESLint & Prettier config for Vue based projects at Superology using TypeScript",
     "main": "index.js",
     "scripts": {
@@ -27,6 +27,7 @@
         "eslint-config-airbnb-typescript": "17.0.0",
         "eslint-config-superology-vue": "^1.1.0",
         "eslint-import-resolver-typescript": "^3.2.4",
+        "eslint-plugin-vue": "^9.2.0",
         "jest": "^28.1.2",
         "semver": "^7.3.7",
         "typescript": "^4.7.4"
@@ -45,6 +46,7 @@
         "prettier": ">= 2.7.1",
         "eslint-import-resolver-typescript": ">=3.2.1",
         "eslint-config-superology-vue": ">=1.1.0",
+        "eslint-plugin-vue": ">=9.2.0",
         "typescript": ">=4.7.4"
     },
     "keywords": [],
