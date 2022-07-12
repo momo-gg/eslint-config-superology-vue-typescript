@@ -112,7 +112,7 @@ module.exports = {
         '@typescript-eslint/prefer-string-starts-ends-with': ['error'],
         'require-await': ['off'],
         '@typescript-eslint/require-await': ['error'],
-        '@typescript-eslint/unbound-method': ['error'],
+        '@typescript-eslint/unbound-method': 'off',
         'no-var': ['error'],
         '@typescript-eslint/adjacent-overload-signatures': ['error'],
         '@typescript-eslint/ban-ts-comment': ['error'],
