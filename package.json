@@ -1,6 +1,6 @@
 {
     "name": "eslint-config-superology-vue-typescript",
-    "version": "1.1.4",
+    "version": "1.1.5",
     "description": "Shared ESLint & Prettier config for Vue based projects at Superology using TypeScript",
     "main": "index.js",
     "scripts": {
@@ -20,35 +20,35 @@
         "access": "public"
     },
     "dependencies": {
-        "@rushstack/eslint-patch": "^1.1.4",
-        "@typescript-eslint/eslint-plugin": "5.30.5",
-        "@typescript-eslint/parser": "5.30.5",
-        "@vue/eslint-config-typescript": "^11.0.0",
+        "@rushstack/eslint-patch": "^1.2.0",
+        "@typescript-eslint/eslint-plugin": "5.38.0",
+        "@typescript-eslint/parser": "5.38.0",
+        "@vue/eslint-config-typescript": "^11.0.2",
         "eslint-config-airbnb-typescript": "17.0.0",
-        "eslint-config-superology-vue": "^1.1.0",
-        "eslint-import-resolver-typescript": "^3.2.4",
-        "eslint-plugin-vue": "^9.2.0",
-        "tsconfig-paths-webpack-plugin": "^3.5.2",
-        "jest": "^28.1.2",
+        "eslint-config-superology-vue": "^1.1.2",
+        "eslint-import-resolver-typescript": "^3.5.1",
+        "eslint-plugin-vue": "^9.5.1",
+        "tsconfig-paths-webpack-plugin": "^4.0.0",
+        "jest": "^29.0.3",
         "semver": "^7.3.7",
-        "typescript": "^4.7.4"
+        "typescript": "^4.8.3"
     },
     "devDependencies": {
-        "@commitlint/cli": "^17.0.3",
-        "@commitlint/config-conventional": "^17.0.3",
-        "eslint": "^8.19.0",
+        "@commitlint/cli": "^17.1.2",
+        "@commitlint/config-conventional": "^17.1.0",
+        "eslint": "^8.24.0",
         "eslint-plugin-import": "^2.26.0",
         "husky": "^8.0.1",
         "prettier": "^2.7.1"
     },
     "peerDependencies": {
-        "eslint": ">= 8.19.0",
+        "eslint": ">= 8.24.0",
         "eslint-plugin-import": ">= 2.26.0",
         "prettier": ">= 2.7.1",
-        "eslint-import-resolver-typescript": ">=3.2.1",
-        "eslint-config-superology-vue": ">=1.1.0",
-        "eslint-plugin-vue": ">=9.2.0",
-        "typescript": ">=4.7.4"
+        "eslint-import-resolver-typescript": ">= 3.5.1",
+        "eslint-config-superology-vue": ">= 1.1.2",
+        "eslint-plugin-vue": ">= 9.5.1",
+        "typescript": ">= 4.8.3"
     },
     "keywords": [],
     "author": "",
