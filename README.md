@@ -33,6 +33,18 @@ This plugin really requires `eslint-config-superology-vue` to work correctly and
 
 _Using `.eslintrc` file_:
 
+If you don't need to support JavaScript files, all you have to do is to extend `eslint-config-superology-vue-typescript`:
+
+```json
+{
+    "extends": [
+        "eslint-config-superology-vue-typescript"
+    ]
+}
+```
+
+Otherwise, you'll have to configure overrides:
+
 ```json
 {
     "overrides": [

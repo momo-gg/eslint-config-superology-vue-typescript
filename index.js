@@ -26,7 +26,7 @@ module.exports = {
             typescript: {},
         },
     },
-    plugins: ['vue', '@typescript-eslint'],
+    plugins: ['vue'],
     ignorePatterns: ['**/node_modules/**', '**/dist/**', '**/public/**'],
     rules: {
         '@typescript-eslint/explicit-module-boundary-types': 'off',
