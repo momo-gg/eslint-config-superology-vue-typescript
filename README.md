@@ -19,10 +19,10 @@ ESLint statically analyzes your code to quickly find problems. ESLint is built i
 npm install eslint-config-superology-vue-typescript --save-dev
 ```
 
-Also make sure you have peer dependencies installed:
+Also make sure you have peer dependencies installed, they should be automatically installed by npm, but it's good to double check:
 
 ```bash
-npm install eslint-config-superology-vue @rushstack/eslint-patch --save-dev
+npm install eslint prettier jest eslint-plugin-import eslint-config-superology-vue @rushstack/eslint-patch --save-dev
 ```
 
 #### IMPORTANT
